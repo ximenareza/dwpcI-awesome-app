@@ -4,7 +4,8 @@
   "description": "Proyecto de clase de la materia de DWPCI 2024A",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/ximenareza/dwpcI-awesome-app/issues"
   },
-  "homepage": "https://github.com/ximenareza/dwpcI-awesome-app#readme"
+  "homepage": "https://github.com/ximenareza/dwpcI-awesome-app#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "type": "module"
 }
