@@ -29,8 +29,6 @@ app.use((req, res)=>{
   `);
 }); 
 
-
-
 // Definiendo puertos
 const port = 3000;
 const ip = "0.0.0.0"
