@@ -17,6 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(adminRouter);
 // Se agrega ruta shop
 app.use(shopRouter);
+// Se agrega ruta de administrador
+app.use('/admin', adminRouter);
 
 // Registrando el middleware para el error
 // 404
