@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 
 
 // Definiendo puertos
-const port = 3000;
+const port = 5000;
 const ip = "0.0.0.0"
 
 // Arrancando el servidor
