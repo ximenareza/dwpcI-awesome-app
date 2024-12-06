@@ -48,7 +48,6 @@ app.use('/admin', adminRouter);
 // Se agrega ruta shop
 app.use(shopRouter);
 
-
 // Registrando el middleware para el error
 // 404
 app.use((req, res, next) => {
@@ -56,12 +55,11 @@ app.use((req, res, next) => {
   .sendFile(path.resolve('views','404.html'))
 });
 
-
 // Definiendo puertos
-const port = 5000;
+const port = 3000;
 const ip = "0.0.0.0"
 
 // Arrancando el servidor
 app.listen(port, ip, () => {
   console.log(`🤖 Sirviendo en http://localhost:${port}`);
-}); 
+});
