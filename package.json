@@ -26,6 +26,7 @@
   "homepage": "https://github.com/ximenareza/dwpcI-awesome-app#readme",
   "dependencies": {
     "express": "^4.21.1",
+    "express-handlebars": "^7.0.7",
     "http-status": "^2.0.0"
   },
   "type": "module",
