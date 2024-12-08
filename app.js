@@ -48,11 +48,14 @@ app.use('/admin', adminRouter);
 // Se agrega ruta shop
 app.use(shopRouter);
 
-// Registrando el middleware para el error
-// 404
+// Middleware para manejar error 404
 app.use((req, res, next) => {
-  res.status(httpStatus.NOT_FOUND)
-  .sendFile(path.resolve('views','404.html'))
+  // Renderizamos el error 404 usando Handlebars y pasamos variables
+  res.status(httpStatus.NOT_FOUND).render('404', {
+    title: 'Not Found',
+    errorMessage: 'Página no encontrada',
+    errorImage: 'https://essentialwebapps.com/wp-content/uploads/2022/04/error-404-page-not-found-animate-768x512.jpg',
+  });
 });
 
 // Definiendo puertos

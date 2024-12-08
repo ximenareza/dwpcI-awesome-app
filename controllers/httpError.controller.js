@@ -1,5 +1,3 @@
-// controllers/httpError.controller.js
-
 const path = require('path');
 
 exports.get404 = (req, res, next) => {

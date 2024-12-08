@@ -3,6 +3,7 @@ import { Router } from 'express';
 // Importando funciones del controlador
 import { getAddProduct, postAddProduct } from '../controllers/products.controller.js'
 
+
 // Creando una instancia del enrutador de express
 const router = Router();
 
